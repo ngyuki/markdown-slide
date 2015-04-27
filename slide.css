@@ -1,0 +1,59 @@
+/* @import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css); */
+
+.reveal,
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  /* font-family: "Hiragino Kaku Gothic ProN", Meiryo, "League Gothic",Impact,sans-serif; */
+  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, "League Gothic", Impact,sans-serif;
+  color: #eee;
+  text-shadow: 1px 1px 3px;
+  text-transform: none;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  line-height: 1.2;
+}
+
+.reveal p {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.reveal pre {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.reveal li {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 92%;
+  list-style-type: circle;
+}
+
+.reveal li li {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 92%;
+}
+
+.reveal pre code {
+  /* なぜか先頭行がインデントされる */
+  padding: 0;
+  text-shadow: 0px 0px 1px;
+}
+
+.reveal pre {
+  padding: 8px;
+  background-color: #444;
+  box-shadow: 2px 2px 4px #222;
+}
+
+/********************************************************************************/
+
+.reveal .slides {
+  width: 1080px !important;
+}

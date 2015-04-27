@@ -1,0 +1,33 @@
+{
+  "name": "markdown-slide",
+  "version": "0.0.1",
+  "description": "markdown slide",
+  "keywords": [
+    "markdown"
+  ],
+  "homepage": "https://github.com/ngyuki/markdown-slide",
+  "bugs": {
+    "url": "https://github.com/ngyuki/markdown-slide/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Toshiyuki Goto",
+    "email": "ngyuki.ts@gmail.com",
+    "url": "https://github.com/ngyuki/"
+  },
+  "main": "index.js",
+  "bin": {
+    "markdown-slide": "markdown-slide.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngyuki/markdown-slide.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "browser-sync": "~2.6.5"
+  },
+  "devDependencies": {}
+}
