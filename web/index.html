@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="~web/bower/reveal.js/css/reveal.min.css">
+    <link rel="stylesheet" href="~web/bower/reveal.js/css/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting
+    <link rel="stylesheet" href="~web/bower/reveal.js/lib/css/zenburn.css">
+    -->
+    <link rel="stylesheet" href="~web/bower/highlightjs/styles/zenburn.css">
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '~web/bower/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="~web/bower/reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="~web/slide.css">
+  </head>
+  <body id="body">
+    <div class="reveal">
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section data-markdown
+                 data-separator="^\n---+$"
+                 data-vertical="^\n>>>+$"
+                 data-charset="utf-8">
+          <script type="text/template" id="markdown"></script>
+        </section>
+      </div>
+    </div>
+    <script src="~web/bower/reveal.js/lib/js/head.min.js"></script>
+    <script src="~web/bower/reveal.js/js/reveal.min.js"></script>
+    <script src="~web/bower/jquery/jquery.min.js"></script>
+    <!-- <script src="~web/bower/reveal.js/plugin/highlight/highlightjs"></script> -->
+    <script src="~web/bower/highlightjs/highlight.pack.js"></script>
+    <script src="~web/slide.js"></script>
+  </body>
+</html>

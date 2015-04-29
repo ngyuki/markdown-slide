@@ -1,4 +1,4 @@
-$.get('~/slide.md')
+$.get('~slide.md')
   .then(function(data){
     var urls = {};
 
@@ -44,7 +44,7 @@ $.get('~/slide.md')
     $('#markdown').html(data);
   })
   .then(function(){
-    var cdn = "//cdn.jsdelivr.net/reveal.js/2.6.2/";
+    var prefix = "~web/bower/reveal.js/";
     // Full list of configuration options available here:
     // https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
@@ -64,8 +64,8 @@ $.get('~/slide.md')
 
       // Optional libraries used to extend on reveal.js
       dependencies: [
-        { src: cdn + 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-        { src: cdn + 'plugin/markdown/marked.js',
+        { src: prefix + 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+        { src: prefix + 'plugin/markdown/marked.js',
           condition: function(){
             return !!document.querySelector( '[data-markdown]' );
           },
@@ -87,10 +87,10 @@ $.get('~/slide.md')
             });
           }
         },
-        { src: cdn + 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        //{ src: cdn + 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-        { src: cdn + 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-        { src: cdn + 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        { src: prefix + 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        //{ src: prefix + 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: prefix + 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+        { src: prefix + 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
       ]
     });
   }

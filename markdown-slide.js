@@ -16,10 +16,9 @@ bs.init({
     server: {
         baseDir: "./",
         routes: {
-            "/~": __dirname + "/index.html",
-            "/~/slide.md": markdownFile,
-            "/~/slide.js": __dirname + "/slide.js",
-            "/~/slide.css": __dirname + "/slide.css",
+            "/~": __dirname + "/web/index.html",
+            "/~slide.md": markdownFile,
+            "/~web/": __dirname + "/web/",
         }
     },
     startPath: "/~",

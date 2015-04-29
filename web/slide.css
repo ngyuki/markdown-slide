@@ -1,4 +1,6 @@
-/* @import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css); */
+/*
+@import url(fonts/notosansjapanese.css);
+*/
 
 .reveal,
 .reveal h1,
@@ -8,7 +10,7 @@
 .reveal h5,
 .reveal h6 {
   /* font-family: "Hiragino Kaku Gothic ProN", Meiryo, "League Gothic",Impact,sans-serif; */
-  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", Meiryo, "League Gothic", Impact,sans-serif;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, "League Gothic", Impact,sans-serif;
   color: #eee;
   text-shadow: 1px 1px 3px;
   text-transform: none;
