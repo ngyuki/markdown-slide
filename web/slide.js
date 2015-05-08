@@ -55,7 +55,7 @@ $.get('~slide.md')
       //slideNumber: true,
 
       //theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-      transition: Reveal.getQueryHash().transition || 'page', // default/cube/page/concave/zoom/linear/fade/none
+      transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
       backgroundTransition: Reveal.getQueryHash().background || 'default', // default/none/slide/concave/convex/zoom
 
       // Parallax scrolling
