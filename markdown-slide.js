@@ -2,6 +2,7 @@
 
 var util = require("util");
 var path = require("path");
+var fs = require("fs");
 var bs = require("browser-sync").create();
 
 if (process.argv.length < 3) {
@@ -12,17 +13,17 @@ if (process.argv.length < 3) {
 var markdownFile = process.argv[2];
 
 bs.init({
-    files: ["*.md"],
+    files: ["*.md", "*.css"],
     server: {
         baseDir: "./",
         routes: {
             "/~": __dirname + "/web/index.html",
             "/~slide.md": markdownFile,
+            "/~slide.css": markdownFile.slice(0, -path.extname(markdownFile).length) + ".css",
             "/~web/": __dirname + "/web/",
-        }
+        },
     },
     startPath: "/~",
     ghostMode: false,
     //logLevel: "debug",
 });
-
